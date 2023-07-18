@@ -1,0 +1,116 @@
+
+.metrics
+    margin-top: 4px
+    padding: 120px 0
+    background-color: #0A0C0F
+    border-radius: 40px
+    overflow: hidden
+    &__title
+        color: #fff
+        text-align: center
+        text-shadow: 0px 32px 64px 0px rgba(255, 255, 255, 0.08)
+        font-size: 130px
+        font-weight: 700
+        line-height: 120px
+        letter-spacing: -7.8px
+    &__item
+        margin: 0 auto
+    &__analitics
+        height: 564px
+        margin-top: 108px
+        position: relative
+        z-index: 1
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            width: 688px
+            height: 247px
+            z-index: -2
+            flex-shrink: 0
+            border-radius: 688px
+            background: rgb(51,204,204) 
+            background: radial-gradient(circle, rgba(51,204,204,1) 0%, rgba(26,166,166,1) 60%, rgba(0,128,128,1) 100%)
+            filter: blur(200px)
+            
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 52px
+        &-item
+            text-align: center
+            width: 380px
+            &__title 
+                color: var(--white, #FFF)
+                font-size: 56px
+                font-weight: 700
+                line-height: 56px
+                letter-spacing: -2.688px
+            &__subtitle
+                display: block
+                margin: 0 auto 
+                margin-top: 8px
+                color: var(--white, #FFF)
+                font-size: 24px
+                font-weight: 500
+                line-height: 24px
+                letter-spacing: -0.48px
+                opacity: 0.36000001430511475
+        .grid-one
+            grid-column-start: 1
+            grid-column-end: 4
+            grid-row-start: 1
+            grid-row-end: 3
+    &__endprice
+        text-align: center
+        margin: 0 auto 
+        margin-top: 102px
+        &-title
+            color: var(--white, #FFF)
+            font-size: 80px
+            font-weight: 700
+            line-height: 80px
+            letter-spacing: -4.8px
+        &-subtitle 
+            color: var(--white, #FFF)
+            font-size: 32px
+            font-weight: 500
+            line-height: 40px
+            letter-spacing: -0.64px
+    &__ellipse
+        position: absolute
+        bottom: -325px
+        left: 50%
+        transform: translateX(-50%)
+    &__cards
+        display: grid
+        justify-content: center
+        gap: 20px
+        grid-template-columns: repeat(2, 480px)
+        backdrop-filter: blur(24px)
+        position: relative
+        z-index: 100
+        &-item
+            width: 480px
+            height: 206px
+            position: relative
+            padding: 32px 154px 32px 32px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            gap: 53px
+            border-radius: 32px
+            border: 1px solid var(--background-white-bg-8, rgba(255, 255, 255, 0.08))
+            background: var(--background-white-bg-8, rgba(255, 255, 255, 0.08))
+            box-shadow: 0px 40px 64px -30px rgba(0, 0, 0, 0.40)
+            backdrop-filter: blur(24px)
+            z-index: 0
+            a 
+                font-size: 32px
+                font-weight: 600
+                line-height: 32px
+                letter-spacing: -1.024px

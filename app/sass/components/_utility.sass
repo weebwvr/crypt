@@ -1,0 +1,70 @@
+
+.utility
+    padding: 120px 0
+    background-color: #0A0C0F
+    border-radius: 40px
+    margin-top: 4px
+    &__title
+        color: var(--white, #FFF)
+        text-shadow: 0px 32px 64px 0px rgba(255, 255, 255, 0.08)
+        font-size: 130px
+        font-weight: 700
+        line-height: 120px
+        letter-spacing: -7.8px
+    &__block 
+        margin-top: 60px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            width: 1153px
+            height: 1153px
+            flex-shrink: 0
+            border-radius: 1153px
+            background: radial-gradient(38.86% 38.86% at 50.00% 50.00%, rgba(255, 168, 119, 0.16) 0%, rgba(255, 217, 119, 0.00) 100%)
+            filter: blur(200px)
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &-info
+            padding: 80px 0
+            &__title 
+                color: var(--white, #FFF)
+                font-size: 80px
+                font-weight: 700
+                line-height: 80px
+                letter-spacing: -4.8px
+            &__descr 
+                display: block 
+                margin-top: 40px
+                color: rgba(255, 255, 255, 0.36)
+                font-size: 32px
+                font-weight: 500
+                line-height: 40px
+                letter-spacing: -0.64px
+                span 
+                    color: rgba(255, 255, 255, 1)
+        &-thunder 
+            width: 580px
+    &__btn
+        cursor: pointer
+        display: block
+        margin: 0 auto
+        margin-top: 64px
+        padding: 24px 48px
+        align-items: flex-start
+        border-radius: 24px
+        background: #FFF
+        color: var(--background-main-bg-primary, #0A0C0F)
+        gap: 10px
+        justify-content: center
+        align-items: center 
+        font-size: 24px
+        font-weight: 700
+        line-height: 32px
+        letter-spacing: -0.576px
+
+

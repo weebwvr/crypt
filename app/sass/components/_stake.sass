@@ -1,0 +1,111 @@
+
+.stake 
+    padding: 120px 0
+    margin-top: 4px
+    border-radius: 40px
+    background-color: #0A0C0F
+    overflow: hidden
+    &__title
+        color: var(--white, #FFF)
+        text-shadow: 0px 32px 64px 0px rgba(255, 255, 255, 0.08)
+        font-size: 130px
+        font-weight: 700
+        line-height: 120px
+        letter-spacing: -7.8px
+        position: relative
+        padding: 0 0 160px 0
+        span
+            position: absolute
+            bottom: 0px
+            left: -50px
+            z-index: 10
+            margin-top: 12px
+            display: inline-flex
+            transform: rotate(-2deg)
+            padding: 24px 48px
+            align-items: flex-start
+            border-radius: 60px
+            border: 1px solid #000
+            background: linear-gradient(225deg, #FB4A4A 0%, #9B4CFF 100%)
+            gap: 10px
+            color: var(--white, #FFF)
+            text-shadow: 0px 32px 64px 0px rgba(255, 255, 255, 0.08)
+            font-size: 100px
+            font-weight: 700
+            line-height: 100px
+            letter-spacing: -6px
+    &__descr
+        margin-top: 48px
+        color: rgba(255, 255, 255, 0.36)
+        font-size: 48px
+        font-weight: 600
+        line-height: 60px
+        letter-spacing: -1.92px
+        span 
+            color: rgba(255, 255, 255, 1)
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: end
+        position: relative
+        &::after
+            content: ''
+            width: 1000px
+            height: 1000px
+            position: absolute
+            bottom: 0
+            left: -200px
+            z-index: 1
+            border-radius: 1000px
+            background: radial-gradient(38.86% 38.86% at 50.00% 50.00%, rgba(255, 108, 223, 0.24) 0%, rgba(255, 108, 188, 0.00) 100%)
+            filter: blur(200px)
+        &::before
+            content: 'over'
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 614px    
+            z-index: 1000
+            width: 419px
+            height: 80px
+            transform: rotate(-90deg)
+            color: var(--white, #FFF)
+            opacity: 0.07999999821186066
+            font-size: 120px
+            font-weight: 100
+            line-height: 80px
+            letter-spacing: 38.4px
+            text-transform: uppercase
+        &-items 
+            display: flex
+            align-items: center
+            margin-top: 64px
+            &-icon
+                margin-right: 40px
+                width: 100px
+                height: 100px
+                display: flex 
+                align-items: center
+                justify-content: center
+                border-radius: 1000px
+                background: rgba(255, 104, 195, 0.16)
+        &-item
+            width: 514px
+            &__title
+                color: #fff 
+                font-size: 80px
+                font-weight: 700
+                line-height: 80px
+                letter-spacing: -4.8px
+            &__subtitle
+                font-size: 32px
+                font-weight: 500
+                line-height: 40px
+                letter-spacing: -0.64px
+                color: #fff
+                opacity: 0.36000001430511475
+
+.icon-1
+    background: rgba(234, 104, 255, 0.16)
+.icon-2 
+    background: rgba(207, 104, 255, 0.16)
